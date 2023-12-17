@@ -1,0 +1,90 @@
+.dashboardInfo {
+    padding: 63px 0 52px;
+    box-sizing: border-box;
+    max-width: 600px;
+    /* height: 400px; */
+    position: relative;
+    z-index: 0;
+    background-image: url(../images/dashboardInfoBackgroundImage.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.dashboardInfo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(50, 62, 102, 0.80);
+}
+
+.dashboardInfo__icon {
+    display: block;
+    margin: 0 auto;
+}
+
+.dashboardInfo__title {
+    margin: 38px 0 0;
+    position: relative;
+    z-index: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 126.688%;
+}
+
+.dashboardInfo__title::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 3px;
+    position: absolute;
+    bottom: -19px;
+    left: calc((100% - 10px) / 2);
+    z-index: -1;
+    background-color: #FFF;
+}
+
+.dashboardInfo__subtitle {
+    margin: 42px auto 0;
+    max-width: 440px;
+    color: #FFF;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 144.687%;
+}
+
+@media screen and (max-width: 425px) {
+    .dashboardInfo {
+        padding: 43px 0;
+    }
+
+    .dashboardInfo__icon {
+        width: 19.2px;
+        height: 19.2px;
+    }
+
+    .dashboardInfo__title {
+        margin-top: 24px;
+        font-size: 19.2px;
+    }
+
+    .dashboardInfo__title::after {
+        width: 6.4px;
+        height: 1.92px;
+    }
+
+    .dashboardInfo__subtitle {
+        margin-top: 27px;
+        max-width: 282px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,9 @@
+@import url(./vendor/normalize.css);
+
+@import url(./blocks/page.css);
+@import url(./blocks/header.css);
+@import url(./blocks/manager.css);
+@import url(./blocks/dashboardInfo.css);
+@import url(./blocks/dashboardSlider.css);
+@import url(./blocks/contacts.css);
+@import url(./blocks/footer.css);
